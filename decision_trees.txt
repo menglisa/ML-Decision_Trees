@@ -1,0 +1,36 @@
+--1->Occupied
+	-High->Location
+		-Ein-Karem->Yes
+		-Talpiot->No
+		-City-Center->Yes
+		-Mahane-Yehuda->Yes
+		-German-Colony->No
+	-Moderate->Location
+		-City-Center->Yes
+		-German-Colony->VIP
+			-No->No
+			-Yes->Yes
+		-Ein-Karem->Yes
+		-Mahane-Yehuda->Yes
+		-Talpiot->Price
+			-Expensive->No
+			-Cheap->No
+			-Normal->Yes
+	-Low->Location
+		-German-Colony->No
+		-Ein-Karem->Price
+			-Expensive->No
+			-Normal->No
+			-Cheap->Yes
+		-City-Center->Price
+			-Expensive->No
+			-Cheap->No
+			-Normal->Music
+				-Loud->No
+				-Quiet->VIP
+					-Yes->No
+					-No->Favorite Beer
+						-Yes->No
+						-No->No
+		-Talpiot->No
+		-Mahane-Yehuda->No
